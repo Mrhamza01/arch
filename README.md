@@ -1,37 +1,76 @@
 # Arch CLI
 
-Arch is a CLI tool to scaffold **feature-based Clean Architecture** folder structures for .NET, Blazor Hybrid, and Web projects.
+Arch is a lightweight CLI tool to scaffold **feature-based Clean Architecture** folder structures.
+It can be used with any project type — .NET, Blazor, Web, Flutter, Node.js, or even plain folders.
+
+---
 
 ## 📦 Installation
 
-1. Download the installer (`arch-installer.exe`) from [Releases](./dist/installer).
-2. Run the installer — this will:
-   - Install `arch.exe` into `C:\Program Files\Arch\bin`
-   - Add `Arch/bin` to your system PATH
+1. Download the installer (`arch-installer.exe`) from the [Releases](./dist/installer).
+2. Run the installer — this will place `arch.exe` into `C:\Program Files\Arch\bin`.
 
 After installation, you can run `arch` globally from any terminal.
 
+---
+
 ## 🚀 Usage
 
-### Create a new feature
-```sh
-arch feature Todo
-Creates the following structure in your Ecom.Shared/Features folder:
+Arch provides two commands:
 
-markdown
-Copy code
-Features/
- └── Todo/
-     ├── Data/
-     │   ├── Datasources/
-     │   └── Repositories/
-     ├── Domain/
-     │   ├── Entities/
-     │   ├── Repositories/
-     │   └── UseCases/
-     └── Presentation/
-         └── Pages/
-Create a feature in a specific path
-sh
-Copy code
-arch feature Todo --path ../MyApp.Shared/Features
+### 1. Create a feature in the current directory
+
+```sh
+arch Todo
+```
+
+➡ Creates a `Todo` feature folder with the standard Clean Architecture structure in your **current working directory**.
+
+### 2. Create a feature in a specific path
+
+```sh
+arch Todo ../MyApp/Features
+```
+
+➡ Creates the same `Todo` feature folder inside the **path you provide**.
+
+---
+
+## 🗂 Folder Structure
+
+Every feature generated will follow this structure:
+
+```
+<FeatureName>/
+ ├── Data/
+ │   ├── Datasources/
+ │   └── Repositories/
+ ├── Domain/
+ │   ├── Entities/
+ │   ├── Repositories/
+ │   └── UseCases/
+ └── Presentation/
+     └── Pages/
+```
+
+---
+
+## 🔧 Examples
+
+Create an **Auth** feature in the current directory:
+
+```sh
+arch Auth
+```
+
+Create a **Product** feature inside a custom path:
+
+```sh
+arch Product ./src/Features
+```
+
+---
+
+## 🧑 Author
+
+Developed by **Muhammad Hamza**
