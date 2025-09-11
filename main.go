@@ -38,7 +38,7 @@ func main() {
 
 	makeDir(filepath.Join(basePath, "Tests", "Unit"))
 	makeDir(filepath.Join(basePath, "Tests", "Integration"))
-	makeDir(filepath.Join(basePath, "Tests", "UI"))
+	makeDir(filepath.Join(basePath, "Tests", "Ui"))
 
 	fmt.Printf("✅ Feature '%s' created at %s\n", featureName, basePath)
 }
