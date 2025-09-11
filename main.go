@@ -27,6 +27,7 @@ func main() {
 	makeDir(filepath.Join(basePath, "Domain", "Entities"))
 	makeDir(filepath.Join(basePath, "Domain", "Repositories"))
 	makeDir(filepath.Join(basePath, "Domain", "UseCases"))
+	makeDir(filepath.Join(basePath, "Domain", "Datasources"))
 
 	// Data
 	makeDir(filepath.Join(basePath, "Data", "Datasources"))
@@ -34,6 +35,8 @@ func main() {
 
 	// Presentation
 	makeDir(filepath.Join(basePath, "Presentation", "Pages"))
+
+	makeDir(filepath.Join(basePath, "Tests", "Unit"))
 
 	fmt.Printf("✅ Feature '%s' created at %s\n", featureName, basePath)
 }

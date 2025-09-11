@@ -4,7 +4,7 @@
 [Setup]
 AppName=Arch CLI
 AppVersion=1.0.0
-DefaultDirName={pf}\Arch
+DefaultDirName={commonpf}\Arch
 DefaultGroupName=Arch
 UninstallDisplayIcon={app}\bin\arch.exe
 UninstallDisplayName=Arch CLI
