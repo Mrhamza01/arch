@@ -45,6 +45,8 @@ Every feature generated will follow this structure:
  ├── Data/
  │   ├── Datasources/
  │   └── Repositories/
+     └── DTOs/
+     └── Mappings/
  ├── Domain/
  │   ├── Entities/
  │   ├── Repositories/

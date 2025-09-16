@@ -32,6 +32,8 @@ func main() {
 	// Data
 	makeDir(filepath.Join(basePath, "Data", "Datasources"))
 	makeDir(filepath.Join(basePath, "Data", "Repositories"))
+	makeDir(filepath.Join(basePath, "Data", "DTOs"))
+	makeDir(filepath.Join(basePath, "Data", "Mappings"))
 
 	// Presentation
 	makeDir(filepath.Join(basePath, "Presentation", "Pages"))
